@@ -1,0 +1,67 @@
+Architecture logiciel : réalisation d'un Tetris en multijoueur
+--------------------------------------------------------------
+
+
+- mode multijoueur (2 personnes min)
+
+- mode multijoueur = instance de l'application démarré par joueur
+
+- un joueur casse 10 lines = malus pour l'adversaire
+
+- 2 malus differents = plafond qui descend et rajout de lignes
+
+- 3 type de pièces = carré, L, barre
+
+- Mouvement possible (min) = tourner la pièce, déplacer de droit à gauche
+
+- 5 meilleurs scores (nombre de lignes détruites) doivent être enregistrer sur 
+un fichier et pouvoir être afficher a posteriori
+
+- interface ligne de commande ou graphique
+
+- Une grande importance sera attachée à la qualité du code, 
+à la conception objet et 
+au découpage par fonctionnalités avec des contrats clairs
+
+- Utiliser des analyseurs de code statique (npm, findbugs, ...)
+
+def : En informatique, la notion d’analyse statique de programmes couvre 
+une variété de méthodes utilisées pour obtenir des informations sur 
+le comportement d'un programme lors de son exécution sans réellement l'exécuter.
+
+- Nous encourageons aussi une approche TDD sur le projet. L'utilisation des 
+librairies mockito et AssertJ est fortement conseillée.
+
+
+
+Exercice Architecture
+---------------------
+
+Un ou plusieurs paragraphes sont demandés pour présenter et justifier votre 
+architecture. N'hésitez pas à utiliser les techniques de 
+representation d'architecture vues dans le cours
+
+
+Exercice Design Pattern / Solid
+-------------------------------
+
+Illustrez trois principes SOLID ou design pattern en utilisant vos propres
+classes.
+Pourquoi avez-vous utilisé ce design pattern / principe ? 
+Qu'est-ce que cela vous a apporté ? Et comment l'avez-vous appliqué ?
+
+
+
+Bareme : 
+
+Points	   Description
+
+5 points   Architecture du code, découpage des classes, respect des principes Objects (SOLIDE), méthodes < 15 lignes...
+5 points   La totalité des feature faites. Pas de bug et cas aux limites gérés (pas de stacktrace pendant l'execution)
+3 points   Test : code coverage > 70%, assertions intelligentes dans les tests , 
+           tests unitaires (utilisation de mockito ou autre framework de mock)
+3 point	   Exercice Architecture & Design Pattern / Solid
+2 points   Analyse static de code findbug / npm
+1 point	   Utilisation de maven (ou autre logiciel du même type) pour gérer les dépendances et construire le projet. 
+           Utilisation de git avec plusieurs commits pour chaque personnes du binome 
+1 point	   Conventions java / maven respectées (Camelcase, package, ...)
